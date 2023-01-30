@@ -14,8 +14,8 @@ $(function () {
 
   // button click listener
   $('.saveBtn').click(function(){
-    // 'this' refers to the button. Parent Id will be 'hour-x'. When button is clicked, 
-    // it will grab the ID of 'hour-x'
+    // 'this' refers to the button. Parent of button is the div. Grabbing id of parent will be 'hour-x'. 
+    //  When button is clicked, it will grab the ID of 'hour-x'
     // console.log(this)
     var time = $(this).parent().attr('id');
     // using siblings because button is the same level as the textarea/description, and will
